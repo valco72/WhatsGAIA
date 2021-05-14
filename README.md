@@ -5,7 +5,7 @@
 <p align="center">
     WhatsBAT - Makes it easy and fun to use Whatsapp.
     <br>
-        <a href="https://discord.gg/gaia">DISCORD SERVER</a> |
+        <a href="https://discord.gg/gaia">DISCORD SERVER</a> 
     <br>
 </p>
 
