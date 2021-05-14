@@ -1,29 +1,29 @@
 {
-  "name": "WhatsAsenaDuplicated",
-  "version": "1.2.3",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./WhatsAsenaDuplicated/bot.js",
+  "name": "WhatsGAIA",
+  "version": "1.0",
+  "description": "WhatsGAIA project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "main": "./WhatsGAIA/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phaticusthiccy/WhatsAsenaDuplicated.git"
+    "url": "git+https://github.com/valco72/WhatsGAIA.git"
   },
   "keywords": [
     "whatsapp",
     "bot",
     "ai",
-    "asena",
-    "WhatsAsena"
+    "GAIA",
+    "WhatsGAIA"
   ],
-  "author": "AsenaDev / Yusuf Usta",
-  "developer": "AsenaDev / @phaticusthiccy",
+  "author": "GAIADev / BAT",
+  "developer": "GAIADev / @Mockir",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
+    "url": "https://discord.gg/gaia"
   },
-  "homepage": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated#readme",
+  "homepage": "https://discord.gg/gaia",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.0",
     "@lh2020/speedtest-net": "^2.1.1",

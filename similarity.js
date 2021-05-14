@@ -1,4 +1,4 @@
-/* WhatsAsena Duplicated - Artificial Intelligence Similarity
+/* WhatsGAIA - Artificial Intelligence Similarity
 Codded by lyfee
 
 function similarity(first, second) {
