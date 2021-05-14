@@ -1,10 +1,10 @@
 {
-    "__ASENAJSON__": true,
+    "__GAIAJSON__": true,
     "LANGUAGE": "Türkcə",
     "LANGCODE": "Tr",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "GAIADev",
     "STRINGS": {
-        "_asena": {
+        "_GAIA": {
             "COMMAND": "Əmr",
             "DESC": "Açığlama",
             "EXAMPLE": "Nümunə",
@@ -25,7 +25,7 @@
             "NEED_PLUGIN": "```Zəhmət olmasa bir Plugin daxil edin! Nümunə: .plugin __test```",
             "NOT_FOUND_PLUGIN": "```Bəlkə belə bir plagin quraşdırmısınız, ya da yox. Ancaq əmin deyil ki, indi deyil.```",
             "DELETED": "*✅ Modul uğurla silindi!*",
-            "WARN": "Plaginləri yalnız t.me/remasterplugin kanalından əldə edin."
+            "WARN": "Plaginləri yalnız discord.gg/gaia sunucumuzdan əldə edin."
         },
         "admin": {
             "BAN_DESC": "Grupdan şəxsi banlayır. Cavap verin (reply) yada əmrin yanına şəxs adı yazın",
@@ -75,9 +75,9 @@
             "MUST_TEXT": "```Cavab mətn olmalıdır```"
         },
         "heroku": {
-            "RESTART_DESC": "WhatsAsena-nı yenidən başladın",
+            "RESTART_DESC": "WhatsGAIA-nı yenidən başladın",
             "RESTART_MSG": "```yenidən başladır ...```",
-            "SHUTDOWN_DESC": "WhatsAsena-nı söndürün",
+            "SHUTDOWN_DESC": "WhatsGAIA-nı söndürün",
             "SHUTDOWN_MSG": "```söndürmək ⛔```",
             "DYNO_DESC": "Heroku dyno istifadəsini yoxlayın",
             "DYNO_TOTAL": "```Ümumi kvota```",
@@ -247,7 +247,7 @@
             "INVALID_HEROKU": "*❌ Heroku məlumatlarınız yanlışdır!*",
             "UPDATED": "*✅ Yenilənmə müvəffəqiyyətlə sona çatdı!*",
             "UPDATED_LOCAL": "*✅ Yenilənmə müvəffəqiyyətlə sona çatdı!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena Yenidən Başladır.*",
+            "AFTER_UPDATE": "*💬 WhatsGAIA Yenidən Başladır.*",
             "IN_AF": "*Zəhmət olmasa* ```HEROKU_APP_NAME``` *ilə* ```app_name``` *eyni olduğuna əmin olun.*\n*Bu iki dəyər eynidirsə, xahiş edirəm* ```HEROKU_API_KEY```'inizi *dəyişdirin!*\n\n_Bu parametrlərə daxil olmaq üçün Heroku >> Uygulama >> Settings >> Reavel Config Vars addımlarınızı izləyin._\n_API açarınızı yeniləmək üçün Heroku >> Account >> API Key Bölmədən təzələndikdən sonra onu köhnə API açarı ilə əvəz edin._"
         },
         "weather": {
@@ -433,7 +433,7 @@
             "SAVE_USAGE": "Cavabladığınız mesajı və ya rəsmi qeydləri qeyd edir.",
             "REPLY": "Xahiş edirəm bir mesaj verin və ya onu .save <öz qeydiniz> olaraq istifadə edin.",
             "SUCCESSFULLY_ADDED": "Qeydiniz uğurla qeyd edildi, qeydlərinizə .notes yazaraq daxil ola bilərsiniz.",
-            "UNSUCCESSFUL": "Qeydinizi saxlayarkən bir səhvlə qarşılaşdıq, xahiş edirəm yenidən cəhd edin. Problem davam edərsə, xahiş edirəm WhatsAsena inkişaf etdiriciləri ilə əlaqə saxlayın..",
+            "UNSUCCESSFUL": "Qeydinizi saxlayarkən bir səhvlə qarşılaşdıq, xahiş edirəm yenidən cəhd edin. Problem davam edərsə, xahiş edirəm WhatsGAIA inkişaf etdiriciləri ilə əlaqə saxlayın..",
             "DELETE_USAGE": "Yadda saxladığınız *bütün* qeydləri silir.",
             "SUCCESSFULLY_DELETED": "Bütün qeydləriniz uğurla silindi."
         },
@@ -454,7 +454,7 @@
             "NOT_FOUND": "*Post tapılmadı!*"
         },
         "github": {
-            "GİTHUB_DESC": "Verilən istifadəçi adından github məlumatlarını toplayır.\n⌨️ Nümunə: .github phaticusthiccy",
+            "GİTHUB_DESC": "Verilən istifadəçi adından github məlumatlarını toplayır.\n⌨️ Nümunə: .github valco72",
             "REPLY": "```Hər hansı bir istifadəçi adı daxil etməlisiniz!```",
             "NOT": "```İstifadəçi Tapılmadı!```",
             "FOLLOWERS": "İzləyicilər:",

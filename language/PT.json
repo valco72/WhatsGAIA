@@ -1,32 +1,32 @@
 {
-    "__ASENAJSON__": true,
+    "__GAIAJSON__": true,
     "LANGUAGE": "Português Brasileiro",
     "LANGCODE": "pt",
-    "AUTHOR": "Phaticusthiccy / @xmtscf",
+    "AUTHOR": "valco72 / @xmtscf",
     "STRINGS": {
-        "_asena": {
+        "_GAIA": {
             "COMMAND": "Comando",
             "DESC": "Descrição",
             "EXAMPLE": "Exemplo",
             "NOT_FOUND": "*Não consegui encontrar um comando como este*",
             "WARN": "Atenção"
         },
-        "_plugin": {
-            "INSTALL_DESC": "Instale plugins externos.",
-            "NEED_URL": "Por favor insira um URL! Exemplo:",
-            "UNOFF": "⚠️ *Atenção!* \n*O plugin que você instalou não é oficial!*",
-            "INVALID_URL": "```Por favor, insira um URL válido!```",
-            "INVALID_PLUGIN": "*❌ Seu plugin é inválido!*\n*Erro:*",
-            "INSTALLED": "*✅ Plugin foi instalado com sucesso!*",
-            "PLUGIN_DESC": "Mostra os plugins que você instalou.",
-            "INSTALLED_FROM_REMOTE": "*Plugins que você instala externamente:*\n",
-            "NO_PLUGIN": "*Você não instalou nenhum plug-in externo!*",
-            "REMOVE_DESC": "Remove o plugin.",
-            "NEED_PLUGIN": "```Por favor, insira um Plugin! Exemplo: .plugin __test```",
-            "NOT_FOUND_PLUGIN": "```Talvez você tenha instalado esse plugin, ou talvez não. Mas com certeza não é agora.```",
-            "DELETED": "*✅ Módulo excluído com sucesso!*",
-            "WARN": "Obtenha plug-ins apenas do canal t.me/remasterplugin"
-        },
+      "_plugin": {
+        "INSTALL_DESC": "Instale plugins externos.",
+        "NEED_URL": "Por favor insira um URL! Exemplo:",
+        "UNOFF": "⚠️ *Atenção!* \n*O plugin que você instalou não é oficial!*",
+        "INVALID_URL": "```Por favor, insira um URL válido!```",
+        "INVALID_PLUGIN": "*❌ Seu plugin é inválido!*\n*Erro:*",
+        "INSTALLED": "*✅ Plugin foi instalado com sucesso!*",
+        "PLUGIN_DESC": "Mostra os plugins que você instalou.",
+        "INSTALLED_FROM_REMOTE": "*Plugins que você instala externamente:*\n",
+        "NO_PLUGIN": "*Você não instalou nenhum plug-in externo!*",
+        "REMOVE_DESC": "Remove o plugin.",
+        "NEED_PLUGIN": "```Por favor, insira um Plugin! Exemplo: .plugin __test```",
+        "NOT_FOUND_PLUGIN": "```Talvez você tenha instalado esse plugin, ou talvez não. Mas com certeza não é agora.```",
+        "DELETED": "*✅ Módulo excluído com sucesso!*",
+        "WARN": "Obtenha plug-ins apenas do canal discord.gg/gaia"
+      },
         "admin": {
             "BAN_DESC": "Banir alguém do grupo. Responda a uma mensagem ou marque uma pessoa para usar o comando.",
             "IM_NOT_ADMIN": "*Eu não sou administrador neste grupo!*",
@@ -75,9 +75,9 @@
             "MUST_TEXT": "```Por favor responda a qualquer mensagem```"
         },
         "heroku": {
-            "RESTART_DESC": "Reinicia o WhatsAsena",
+            "RESTART_DESC": "Reinicia o WhatsGAIA",
             "RESTART_MSG": "```Reiniciando...```",
-            "SHUTDOWN_DESC": "Desligar WhatsAsena",
+            "SHUTDOWN_DESC": "Desligar WhatsGAIA",
             "SHUTDOWN_MSG": "```Desligando ⛔```",
             "DYNO_DESC": "Verifique o uso do dinamômetro heroku",
             "DYNO_TOTAL": "```Quota Total```",
@@ -249,7 +249,7 @@
             "INVALID_HEROKU": "*❌ Suas informações do Heroku estão erradas!*",
             "UPDATED": "*✅ Atualizado com sucesso!*",
             "UPDATED_LOCAL": "*✅ Atualizado com sucesso!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena reiniciando automaticamente!*",
+            "AFTER_UPDATE": "*💬 WhatsGAIA reiniciando automaticamente!*",
             "IN_AF": "*Certifique-se de que* ```HEROKU_APP_NAME``` *é igual a* ```app name```\n*Se esses dois valores forem iguais, altere* ```HEROKU_API_KEY```\n\n_Para acessar essas configurações Heroku >> App >> Settings >> Reavel Config Vars siga seus passos._\n_Para renovar sua chave de API Heroku >> Account >> API Key Depois de atualizar a seção, substitua-a pela chave de API antiga.._"
         },
         "weather": {
@@ -435,7 +435,7 @@
             "SAVE_USAGE": "Responda uma mensagem e digite .save ou apenas use .save <Sua nota> sem responder",
             "REPLY": "Forneça uma nota ou responda a uma mensagem.",
             "SUCCESSFULLY_ADDED": "Nova nota adicionada com sucesso, verifique suas notas com .notes.",
-            "UNSUCCESSFUL": "Não foi possível adicionar nota, tente novamente mais tarde ou entre em contato com os desenvolvedores do WhatsAsena.",
+            "UNSUCCESSFUL": "Não foi possível adicionar nota, tente novamente mais tarde ou entre em contato com os desenvolvedores do WhatsGAIA.",
             "DELETE_USAGE": "Exclui *todas* as suas notas salvas.",
             "SUCCESSFULLY_DELETED": "Excluiu com sucesso todas as suas notas."
         },
@@ -456,7 +456,7 @@
             "NOT_FOUND": "```Midia nao encontrada```"
         },
         "github": {
-            "GİTHUB_DESC": "Coleta informações do github do nome de usuário fornecido.\n⌨️ Exemplo: .github phaticusthiccy",
+            "GİTHUB_DESC": "Coleta informações do github do nome de usuário fornecido.\n⌨️ Exemplo: .github valco72",
             "REPLY": "```Você precisa digitar qualquer nome de usuário!```",
             "NOT": "```Usuário não encontrado!```",
             "FOLLOWERS": "Seguidores:",

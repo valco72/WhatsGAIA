@@ -1,32 +1,32 @@
 {
-    "__ASENAJSON__": true,
+    "__GAIAJSON__": true,
     "LANGUAGE": "Türkçe",
     "LANGCODE": "tr",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "GAIADev",
     "STRINGS": { 
-        "_asena": {
+        "_GAIA": {
             "COMMAND": "Komut",
             "DESC": "Açıklama",
             "EXAMPLE": "Örnek",
             "NOT_FOUND": "*Böyle bir komut bulamadım!*",
             "WARN": "Uyarı"
         },
-        "_plugin": {
-            "INSTALL_DESC": "Plugin yükler.\n⌨️ Örnek: .install https://gist.github.com/phaticusthiccy/d41dd4428faf34ab8cfd4c392501c62e",
-            "NEED_URL": "Lütfen bir URL giriniz! Örnek:",
-            "INVALID_URL": "```Lütfen bir geçerli URL giriniz!```",
-            "INVALID_PLUGIN": "*❌ Plugininiz hatalı!*\n*Hata:*",
-            "INSTALLED": "*✅ Plugin başarılı bir şekilde yüklendi!*",
-            "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
-            "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğiniz pluginler:*\n",
-            "NO_PLUGIN": "*Dışarıdan hiç plugin yüklememişsiniz!*",
-            "REMOVE_DESC": "Plugin kaldırır.",
-            "NEED_PLUGIN": "```Lütfen bir Plugin giriniz! Örnek: .plugin test```",
-            "NOT_FOUND_PLUGIN": "```Böyle bir plugin belki yüklediniz, belki de yüklemediniz. Ama şu an olmadığı kesin.```",
-            "DELETED": "*✅ Modül başarıyla silindi!*",
-            "UNOFF": "⚠️ *Dikkat!* \n*Yüklendiğiniz plugin resmi değildir!*",
-            "WARN": "Pluginleri sadece t.me/remasterplugin kanalından alın."
-        },
+      "_plugin": {
+        "INSTALL_DESC": "Plugin yükler.\n⌨️ Örnek: .install (plugin link)",
+        "NEED_URL": "Lütfen bir URL giriniz! Örnek:",
+        "INVALID_URL": "```Lütfen bir geçerli URL giriniz!```",
+        "INVALID_PLUGIN": "*❌ Plugininiz hatalı!*\n*Hata:*",
+        "INSTALLED": "*✅ Plugin başarılı bir şekilde yüklendi!*",
+        "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
+        "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğiniz pluginler:*\n",
+        "NO_PLUGIN": "*Dışarıdan hiç plugin yüklememişsiniz!*",
+        "REMOVE_DESC": "Plugin kaldırır.",
+        "NEED_PLUGIN": "```Lütfen bir Plugin giriniz! Örnek: .plugin test```",
+        "NOT_FOUND_PLUGIN": "```Böyle bir plugin belki yüklediniz, belki de yüklemediniz. Ama şu an olmadığı kesin.```",
+        "DELETED": "*✅ Modül başarıyla silindi!*",
+        "UNOFF": "⚠️ *Dikkat!* \n*Yüklendiğiniz plugin resmi değildir!*",
+        "WARN": "Pluginleri sadece discord.gg/gaia sunucusundan alın."
+      },
         "admin": {
             "BAN_DESC": "Gruptan kişi banlar. Yanıt verin ya da komutun yanına kişiyi etiketleyin.",
             "IM_NOT_ADMIN": "*Bu grupta admin değilim!*",
@@ -75,10 +75,10 @@
             "MUST_TEXT": "```Lütfen herhangi bir mesajı yanıtlayın```"
         },
         "heroku": {
-            "RESTART_DESC": "WhatsAsena'yı yeniden başlatın",
+            "RESTART_DESC": "WhatsGAIA'yı yeniden başlatın",
             "RESTART_MSG": "```Yeniden Başlatılıyor...```",
-            "SHUTDOWN_DESC": "WhatsAsena'yı kapatır.",
-            "SHUTDOWN_MSG": "*Belki birgün tekrar görüşebiliriz..\nHoşcakal Sahip..*\n```Asena Kapatılıyor... ⛔```",
+            "SHUTDOWN_DESC": "WhatsGAIA'yı kapatır.",
+            "SHUTDOWN_MSG": "*Belki birgün tekrar görüşebiliriz..\nHoşcakal Sahip..*\n```GAIA Kapatılıyor... ⛔```",
             "DYNO_DESC": "Heroku dyno kullanımını kontrol edin",
             "DYNO_TOTAL": "```Toplam Kota```",
             "DYNO_USED": "```Kullanılan kota```",
@@ -249,7 +249,7 @@
             "UPDATED": "*✅ Güncelleme başarılı oldu!*",
             "IN_AF": "*Lütfen* _HEROKU_APP_NAME_ *ile* _app name_'nin *aynı olduğuna emin olun.* \n\n*Bilgiler doğru ise lütfen* _HEROKU_API_KEY_'inizi *yenileyin.*",
             "UPDATED_LOCAL": "*✅ Güncelleme başarılı oldu!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena Yeniden Başlatılıyor*",
+            "AFTER_UPDATE": "*💬 WhatsGAIA Yeniden Başlatılıyor*",
             "IN_AF": "*Lütfen* ```HEROKU_APP_NAME``` *ile* ```app name```'nizin *aynı olduğuna emin olun.*\n*Bu iki değer aynı ise lütfen* ```HEROKU_API_KEY```'inizi *değiştirin!*\n\n_Bu ayarlara ulaşmak için Heroku >> Uygulama >> Settings >> Reavel Config Vars adımlarını takip edin._\n_API keyinizi yenilemek için Heroku >> Account >> API Key kısmından yeniledikten sonra eski API key ile değiştirin._"
         },
         "weather": {
@@ -441,7 +441,7 @@
             "SAVE_USAGE": "Yanıtladığınız mesajı yada resmi nota kaydeder.",
             "REPLY": "Lütfen bir mesaj alıntılayın veya .save <notunuz> şeklinde kullanın.",
             "SUCCESSFULLY_ADDED": "Notunuz başarılı bir şekilde kaydedildi, .notes yazarak notlarınıza ulaşabilirsiniz",
-            "UNSUCCESSFUL": "Notunuzu kaydederken bir hatayla karşılaştık, lütfen tekrar deneyin. Eğer sorun devam ediyorsa lütfen WhatsAsena geliştiricileriyle iletişime geçin.",
+            "UNSUCCESSFUL": "Notunuzu kaydederken bir hatayla karşılaştık, lütfen tekrar deneyin. Eğer sorun devam ediyorsa lütfen WhatsGAIA geliştiricileriyle iletişime geçin.",
             "DELETE_USAGE": "Kaydettiğiniz *tüm* notlarınızı siler.",
             "SUCCESSFULLY_DELETED": "Tüm notlarınız başarılı bir şekilde silindi."
         },
@@ -462,7 +462,7 @@
             "NOT_FOUND": "*Medya Bulunamadı!*"
         },
         "github": {
-            "GİTHUB_DESC": "Verilen kullanıcı adından github bilgilerini toplar.\n⌨️ Örnek: .github phaticusthiccy",
+            "GİTHUB_DESC": "Verilen kullanıcı adından github bilgilerini toplar.\n⌨️ Örnek: .github valco72",
             "REPLY": "```Herhangi Bir Kullanıcı Adı Girmen Gerekiyor!```",
             "NOT": "```Kullanıcı Bulunamadı!```",
             "FOLLOWERS": "Takipçiler:",
