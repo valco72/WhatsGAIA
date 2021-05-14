@@ -18,8 +18,8 @@
 
 ### The Hard Method
 ```js
-$ git clone https://github.com/phaticusthiccy/WhatsAsenaDuplicated.git
-$ cd WhatsAsenaDuplicated
+$ git clone https://github.com/valco72/WhatsGAIA.git
+$ cd WhatsGAIA
 $ npm i
 $ nano Config.env
 // Config.env oluşturun ve düzenleyin.
