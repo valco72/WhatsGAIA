@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://cdn.discordapp.com/attachments/841762855346503693/842104208865886248/Render_1_1.gif" width="200" height="200">
-  <h1>🐺 WhatsAsena Duplicated</h1>
+  <img src="https://cdn.discordapp.com/attachments/841762855346503693/841991163095547925/Untitled-1_1.png" width="200" height="200">
+  <h1>₲ WhatsGAIA ₲</h1>
 </div>
 <p align="center">
     WhatsBAT - Makes it easy and fun to use Whatsapp.
