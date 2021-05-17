@@ -8,7 +8,7 @@ const Lang = Language.getString('wallpaper');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'hentai', fromMe: true, desc: "GAIA size ozel Hentai fotografi gonderir."}, (async (message, match) => {
+    Asena.addCommand({pattern: 'cinsel', fromMe: true, desc: "GAIA size ozel cinsel fotograf gonderir."}, (async (message, match) => {
 
         var r_text = new Array ();
 
@@ -126,7 +126,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'wallpaper', fromMe: false, desc: Lang.WP}, (async (message, match) => {
+    Asena.addCommand({pattern: 'cinsel', fromMe: false, desc: "Gaia size ozel cinsel fotograf gonderir."}, (async (message, match) => {
 
         var r_text = new Array ();
 
@@ -241,7 +241,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'})
 
     }));
-    Asena.addCommand({pattern: 'wallpaper', fromMe: true, desc: Lang.WP, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'cinsel', fromMe: true, desc: "Gaia size ozel cinsel fotograf gonderir", dontAddCommandList: true}, (async (message, match) => {
 
         var r_text = new Array ();
 
