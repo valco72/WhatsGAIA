@@ -1,7 +1,7 @@
 {
   "name": "WhatsGAIA",
-  "version": "1.0 GAIA EDITION",
-  "description": "WhatsGAIA",
+  "version": "9.9.9",
+  "description": "WhatsGAIA.",
   "main": "./WhatsGAIA/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
@@ -17,13 +17,13 @@
     "gaia",
     "WhatsGAIA"
   ],
-  "author": "AsenaDev / BAT",
-  "developer": "AsenaDev / @valco72",
+  "author": "AsenaDev / Yusuf Usta",
+  "developer": "AsenaDev / @phaticusthiccy",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://discord.gg/gaia"
+    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
   },
-  "homepage": "https://github.com/valco72/WhatsGAIA",
+  "homepage": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.0",
     "@lh2020/speedtest-net": "^2.1.1",

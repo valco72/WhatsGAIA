@@ -1,14 +1,14 @@
 {
   "name": "WhatsGAIA",
-  "description": "WhatsGAIA - Makes it easy and fun to use Whatsapp.",
-  "logo": "https://cdn.discordapp.com/attachments/841762855346503693/842046176718356490/Untitled-1_1.png",
+  "description": "WhatsGAIA",
+  "logo": "https://cdn.discordapp.com/attachments/841762855346503693/841991163095547925/Untitled-1_1.png",
   "keywords": [ "whatsapp", "userbot", "GAIA", "WhatsGAIA", "bot", "api", "ai" ],
   "repository": "https://github.com/valco72/WhatsGAIA",
   "website": "https://discord.gg/gaia",
   "success_url": "https://discord.gg/gaia",
   "stack": "container",
   "env": {
-    "GAIA_SESSION": {
+    "ASENA_SESSION": {
       "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours GAIA Session.",
       "required": true
     },
