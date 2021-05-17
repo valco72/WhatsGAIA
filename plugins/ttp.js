@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'hpttp ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'hpttp ?(.*)', fromMe: true, desc: "Harry Potter Yazisi" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -51,7 +51,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp1 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp1 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 1" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -61,7 +61,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp2 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp2 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 2" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -71,7 +71,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp3 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp3 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 3" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -81,7 +81,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp4 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp4 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 4" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -91,7 +91,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp5 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp5 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 5" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -101,7 +101,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp6 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp6 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 6" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -111,7 +111,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp7 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp7 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 7" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -121,7 +121,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp0 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp0 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 8" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -131,7 +131,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp9 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp9 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 9" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -141,7 +141,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp8 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp8 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 10" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -151,7 +151,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp7 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp7 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 11" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -161,7 +161,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp6 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp6 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 12" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -171,7 +171,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp5 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp5 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 13" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -181,7 +181,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp4 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp4 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 14" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -191,7 +191,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp3 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp3 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 15" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -201,7 +201,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp1 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp1 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 16" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -211,7 +211,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp2 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp2 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 17" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -221,7 +221,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp9 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp9 ?(.*)', fromMe: true, desc: "Gaia TTP özel yazısı 18" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -263,38 +263,8 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.sticker, { mimetype: Mimetype.webp })
 
     }));
-    Asena.addCommand({ pattern: 'ttp ?(.*)', fromMe: true, desc: Lang.TTP_DESC, dontAddCommandList: true }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD, MessageType.text);
-
-        var ttinullimage = await axios.get(`https://api.xteam.xyz/ttp?file&text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}`, { responseType: 'arraybuffer' })
-
-        await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by WhatsGAIA' })
-
-    }));
-
-    Asena.addCommand({ pattern: 'attp ?(.*)', fromMe: true, desc: Lang.ATTP_DESC, dontAddCommandList: true}, (async (message, match) => {
-
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD, MessageType.text);
-
-        var ttinullimage = await axios.get(`https://api.xteam.xyz/attp?file&text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}`, { responseType: 'arraybuffer' })
-
-
-        await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.sticker, { mimetype: Mimetype.webp })
-
-    }));
-
-    Asena.addCommand({ pattern: 'glowttp ?(.*)', fromMe: true, desc: Lang.GLOW_DESC, dontAddCommandList: true}, (async (message, match) => {
-
-        if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
-
-        var ttinullimage = await axios.get(`https://videfikri.com/api/textmaker/glowingneon/?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by WhatsGAIA' })
-
-    }));
-
-    Asena.addCommand({ pattern: 'hpttp ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'hpttp ?(.*)', fromMe: false, desc: "Harry Potter özel yazısı" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -304,7 +274,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp1 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp1 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 1" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -314,7 +284,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp2 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp2 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 2" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -324,7 +294,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp3 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp3 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 3" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -334,7 +304,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp4 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp4 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 4" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -344,7 +314,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp5 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp5 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 5" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -354,7 +324,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp6 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp6 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 6" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -364,7 +334,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp7 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp7 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 7" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -374,7 +344,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp0 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp0 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 8" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -384,7 +354,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp9 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp9 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 9" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -394,7 +364,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp8 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp8 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 10" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -404,7 +374,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp7 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp7 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 11" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -414,7 +384,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp6 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp6 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 12" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -424,7 +394,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp5 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp5 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 13" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -434,7 +404,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp4 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp4 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 14" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -444,7 +414,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp3 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp3 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 15" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -454,7 +424,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp1 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp1 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 16" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -464,7 +434,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gattp2 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gattp2 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 17" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -474,7 +444,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gttp9 ?(.*)', fromMe: false, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'gttp9 ?(.*)', fromMe: false, desc: "Gaia TTP özel yazısı 18" }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
