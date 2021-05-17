@@ -3,7 +3,7 @@
   <h1>₲ WhatsGAIA ₲</h1>
 </div>
 <p align="center">
-    WhatsBAT - Makes it easy and fun to use Whatsapp.
+    WhatsGAIA - Makes it easy and fun to use Whatsapp.
     <br>
         <a href="https://discord.gg/gaia">DISCORD SERVER</a> 
     <br>
