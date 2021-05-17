@@ -1,32 +1,32 @@
 {
-    "__GAIAJSON__": true,
+    "__ASENAJSON__": true,
     "LANGUAGE": "Türkçe",
     "LANGCODE": "tr",
-    "AUTHOR": "GAIADev",
+    "AUTHOR": "AsenaDev",
     "STRINGS": { 
-        "_GAIA": {
+        "_bat": {
             "COMMAND": "Komut",
             "DESC": "Açıklama",
             "EXAMPLE": "Örnek",
             "NOT_FOUND": "*Böyle bir komut bulamadım!*",
             "WARN": "Uyarı"
         },
-      "_plugin": {
-        "INSTALL_DESC": "Plugin yükler.\n⌨️ Örnek: .install (plugin link)",
-        "NEED_URL": "Lütfen bir URL giriniz! Örnek:",
-        "INVALID_URL": "```Lütfen bir geçerli URL giriniz!```",
-        "INVALID_PLUGIN": "*❌ Plugininiz hatalı!*\n*Hata:*",
-        "INSTALLED": "*✅ Plugin başarılı bir şekilde yüklendi!*",
-        "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
-        "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğiniz pluginler:*\n",
-        "NO_PLUGIN": "*Dışarıdan hiç plugin yüklememişsiniz!*",
-        "REMOVE_DESC": "Plugin kaldırır.",
-        "NEED_PLUGIN": "```Lütfen bir Plugin giriniz! Örnek: .plugin test```",
-        "NOT_FOUND_PLUGIN": "```Böyle bir plugin belki yüklediniz, belki de yüklemediniz. Ama şu an olmadığı kesin.```",
-        "DELETED": "*✅ Modül başarıyla silindi!*",
-        "UNOFF": "⚠️ *Dikkat!* \n*Yüklendiğiniz plugin resmi değildir!*",
-        "WARN": "Pluginleri sadece discord.gg/gaia sunucusundan alın."
-      },
+        "_plugin": {
+            "INSTALL_DESC": "Plugin yükler.\n⌨️ Örnek: .install https://gist.github.com/valco72/pluginlink",
+            "NEED_URL": "Lütfen bir URL giriniz! Örnek:",
+            "INVALID_URL": "```Lütfen bir geçerli URL giriniz!```",
+            "INVALID_PLUGIN": "*❌ Plugininiz hatalı!*\n*Hata:*",
+            "INSTALLED": "*✅ Plugin başarılı bir şekilde yüklendi!*",
+            "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
+            "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğiniz pluginler:*\n",
+            "NO_PLUGIN": "*Dışarıdan hiç plugin yüklememişsiniz!*",
+            "REMOVE_DESC": "Plugin kaldırır.",
+            "NEED_PLUGIN": "```Lütfen bir Plugin giriniz! Örnek: .plugin test```",
+            "NOT_FOUND_PLUGIN": "```Böyle bir plugin belki yüklediniz, belki de yüklemediniz. Ama şu an olmadığı kesin.```",
+            "DELETED": "*✅ Modül başarıyla silindi!*",
+            "UNOFF": "⚠️ *Dikkat!* \n*Yüklendiğiniz plugin resmi değildir!*",
+            "WARN": "Pluginleri sadece t.me/remasterplugin kanalından alın."
+        },
         "admin": {
             "BAN_DESC": "Gruptan kişi banlar. Yanıt verin ya da komutun yanına kişiyi etiketleyin.",
             "IM_NOT_ADMIN": "*Bu grupta admin değilim!*",
@@ -78,7 +78,7 @@
             "RESTART_DESC": "WhatsGAIA'yı yeniden başlatın",
             "RESTART_MSG": "```Yeniden Başlatılıyor...```",
             "SHUTDOWN_DESC": "WhatsGAIA'yı kapatır.",
-            "SHUTDOWN_MSG": "*Belki birgün tekrar görüşebiliriz..\nHoşcakal Sahip..*\n```GAIA Kapatılıyor... ⛔```",
+            "SHUTDOWN_MSG": "*Belki birgün tekrar görüşebiliriz..\nHoşcakal Sahip..*\n```Asena Kapatılıyor... ⛔```",
             "DYNO_DESC": "Heroku dyno kullanımını kontrol edin",
             "DYNO_TOTAL": "```Toplam Kota```",
             "DYNO_USED": "```Kullanılan kota```",

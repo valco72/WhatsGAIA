@@ -1,32 +1,32 @@
 {
-    "__GAIAJSON__": true,
+    "__ASENAJSON__": true,
     "LANGUAGE": "Español",
     "LANGCODE": "es",
     "AUTHOR": "valco72 / Skueletor",
     "STRINGS": {
-        "_GAIA": {
+        "_bat": {
             "COMMAND": "Comando",
             "DESC": "Explicación",
             "EXAMPLE": "Ejemplo",
             "NOT_FOUND": "*¡No pude encontrar tal comando!*",
             "WARN": "Advertencia"
         },
-      "_plugin": {
-        "INSTALL_DESC": "Instalar plugins.",
-        "NEED_URL": "Introduzca una URL. Muestra:",
-        "INVALID_URL": "```¡Ingrese una URL válida!```",
-        "INVALID_PLUGIN": "*❌ ¡Tu plugin está defectuoso!*\n*Error:*",
-        "INSTALLED": "*✅ ¡El plugin se ha instalado correctamente!*",
-        "PLUGIN_DESC": "Muestra los plugins que ha instalado.",
-        "INSTALLED_FROM_REMOTE": "*plugins instalados externamente:*",
-        "NO_PLUGIN": "*¡No ha instalado ningún plugin externo!*",
-        "REMOVE_DESC": "Elimina el plugin.",
-        "NEED_PLUGIN": "```Introduzca un complemento. Ejemplo: .plugin _ejemplo```",
-        "NOT_FOUND_PLUGIN": "```Tal vez haya instalado un complemento de este tipo, o tal vez no. Pero seguro que no ahora mismo.```",
-        "DELETED": "*✅ ¡Plugin eliminado correctamente!*",
-        "UNOFF": "⚠️ *Atención!* \n*El plugin que subiste no es oficial!*",
-        "WARN": "Obtenga complementos solo del canal discord.gg/gaia."
-      },
+        "_plugin": {
+            "INSTALL_DESC": "Instalar plugins.",
+            "NEED_URL": "Introduzca una URL. Muestra:",
+            "INVALID_URL": "```¡Ingrese una URL válida!```",
+            "INVALID_PLUGIN": "*❌ ¡Tu plugin está defectuoso!*\n*Error:*",
+            "INSTALLED": "*✅ ¡El plugin se ha instalado correctamente!*",
+            "PLUGIN_DESC": "Muestra los plugins que ha instalado.",
+            "INSTALLED_FROM_REMOTE": "*plugins instalados externamente:*",
+            "NO_PLUGIN": "*¡No ha instalado ningún plugin externo!*",
+            "REMOVE_DESC": "Elimina el plugin.",
+            "NEED_PLUGIN": "```Introduzca un complemento. Ejemplo: .plugin _ejemplo```",
+            "NOT_FOUND_PLUGIN": "```Tal vez haya instalado un complemento de este tipo, o tal vez no. Pero seguro que no ahora mismo.```",
+            "DELETED": "*✅ ¡Plugin eliminado correctamente!*",
+            "UNOFF": "⚠️ *Atención!* \n*El plugin que subiste no es oficial!*",
+            "WARN": "Obtenga complementos solo del canal t.me/remasterplugin."
+        },
         "admin": {
             "BAN_DESC": "La persona del grupo será baneada. (Responda o etiquete a la persona junto al comando).",
             "IM_NOT_ADMIN": "*¡No soy un administrador en este grupo!*",
