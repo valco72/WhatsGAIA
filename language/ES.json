@@ -4,7 +4,7 @@
     "LANGCODE": "es",
     "AUTHOR": "valco72 / Skueletor",
     "STRINGS": {
-        "_bat": {
+        "_gaia": {
             "COMMAND": "Comando",
             "DESC": "Explicación",
             "EXAMPLE": "Ejemplo",

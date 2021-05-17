@@ -4,7 +4,7 @@
     "LANGCODE": "tr",
     "AUTHOR": "AsenaDev",
     "STRINGS": { 
-        "_bat": {
+        "_gaia": {
             "COMMAND": "Komut",
             "DESC": "Açıklama",
             "EXAMPLE": "Örnek",
