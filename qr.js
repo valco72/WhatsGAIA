@@ -1,9 +1,9 @@
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
-const {StringSession} = require('./whatsGAIA/');
+const {StringSession} = require('./whatsgaia/');
 const fs = require('fs');
 
-async function whatsGAIA () {
+async function whatsAsena () {
     const conn = new WAConnection();
     const Session = new StringSession();  
     conn.logger.level = 'warn';
@@ -11,7 +11,7 @@ async function whatsGAIA () {
     
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('GAIA')}
-${chalk.white.italic('GAIAString Kodu Alıcı')}
+${chalk.white.italic('GAIA Kodu Alıcı')}
 
 ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     });
@@ -36,4 +36,4 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     await conn.connect();
 }
 
-whatsGAIA()
+whatsAsena()

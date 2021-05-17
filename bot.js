@@ -6,7 +6,7 @@ const config = require('./config');
 const axios = require('axios');
 const Heroku = require('heroku-client');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./whatsGAIA/');
+const {Message, StringSession, Image, Video} = require('./whatsgaia/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
@@ -25,7 +25,7 @@ const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // Sql
-const WhatsGAIADB = config.DATABASE.define('WhatsGAIA', {
+const WhatsAsenaDB = config.DATABASE.define('WhatsGAIA', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -70,11 +70,11 @@ Array.prototype.remove = function() {
     return this;
 };
 
-async function whatsGAIA () {
-    var insult = await axios.get('https://gist.githubusercontent.com/valco72/f1652a4d3ee73e0231a971ad61e7c0ac/raw')
+async function whatsAsena () {
+    var insult = await axios.get('https://gist.githubusercontent.com/phaticusthiccy/42e0a7f9086fbcc194cd28ada1a5b894/raw/46bacfd4c1d09ec4743cff9d51b52a0185b4e53f/inside.json')
     const { shs1, shl2, lss3, dsl4 } = insult.data.inside
     await config.DATABASE.sync();
-    var StrSes_Db = await WhatsGAIADB.findAll({
+    var StrSes_Db = await WhatsAsenaDB.findAll({
         where: {
           info: 'StringSession'
         }
@@ -107,7 +107,7 @@ async function whatsGAIA () {
 
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
-            await WhatsGAIADB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+            await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
@@ -173,7 +173,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             })
         }
         if (config.WORKTYPE == 'public') {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') { await conn.sendMessage(conn.user.jid, '*WhatsGAIA Public Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*WhatsGAIA Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                await conn.sendMessage(conn.user.jid, '*WhatsGAIA Public Olarak Çalışıyor! ₲*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*WhatsGAIA Kullandığın İçin Teşekkürler ₲*', MessageType.text);
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
                 if (commits.total === 0) {
@@ -195,7 +196,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                     ); 
                 }
             }
-            else { await conn.sendMessage(conn.user.jid, '*WhatsGAIA Working as Public! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as public. To change it, use* _.setvar WORK_TYPE:private_\n\n*Thanks for using WhatsGAIA 💌*', MessageType.text);
+            else {
+                await conn.sendMessage(conn.user.jid, '*WhatsGAIA Working as Public! ₲*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as public. To change it, use* _.setvar WORK_TYPE:private_\n\n*Thanks for using WhatsGAIA ₲*', MessageType.text);
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
                 if (commits.total === 0) {
@@ -219,7 +221,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             }
         }
         else if (config.WORKTYPE == 'private') { 
-            if (config.LANG == 'TR' || config.LANG == 'AZ') { await conn.sendMessage(conn.user.jid, '*WhatsGAIA Private Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*WhatsGAIA Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                await conn.sendMessage(conn.user.jid, '*WhatsGAIA Private Olarak Çalışıyor! ₲*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*WhatsGAIA Kullandığın İçin Teşekkürler ₲*', MessageType.text);
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
                 if (commits.total === 0) {
@@ -240,7 +243,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                     ); 
                 }
             }
-            else { await conn.sendMessage(conn.user.jid, '*WhatsGAIA Working as Private! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using WhatsGAIA 💌*', MessageType.text);
+            else {
+                await conn.sendMessage(conn.user.jid, '*WhatsGAIA Working as Private! ₲*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using WhatsGAIA ₲*', MessageType.text);
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
                 if (commits.total === 0) {
@@ -376,11 +380,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
         
-        if (config.SUPPORT == '905436254003,0') {     
+        if (config.SUPPORT == '905061689909-1612300121') {     
             var sup = config.SUPPORT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (config.SUPPORT2 == '905061689909,0') {     
+        if (config.SUPPORT2 == '905061689909-1617736751') {     
             var tsup = config.SUPPORT2.split(',');                            
             if(msg.key.remoteJid.includes('-') ? tsup.includes(msg.key.remoteJid.split('@')[0]) : tsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
@@ -428,13 +432,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((config.SUPPORT == "905436254003,0" && msg.key.fromMe === false && command.fromMe === true &&
-                        (msg.participant && config.SUPPORT.includes(',') ? config.SUPPORT.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUPPORT || config.SUPPORT.includes(',') ? config.SUPPORT.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUPPORT)
-                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
-                        if (command.onlyPinned && chat.pin === undefined) return;
-                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
-                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
-                    }
                     // ==================== End Events ====================
 
                     // ==================== Message Catcher ====================
@@ -473,7 +470,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
                                     '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
-                                    '\n_Hatayı https://discord.gg/gaia bu gruba iletebilirsiniz._\n\n' +
+                                    '\n_Hatayı https://discord.gg/gaia sunucusuna iletebilirsiniz._\n\n' +
                                     '*Gerçekleşen Hata:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false});
 
@@ -741,4 +738,4 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
     }
 }
 
-whatsGAIA();
+whatsAsena();

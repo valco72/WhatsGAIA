@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /whatsGAIA/Dockerfile
+      worker: /whatsgaia/Dockerfile
 run:
    worker: npm start

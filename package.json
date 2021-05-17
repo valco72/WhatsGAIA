@@ -1,7 +1,7 @@
 {
   "name": "WhatsGAIA",
-  "version": "1.0",
-  "description": "WhatsGAIA project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "version": "1.0 GAIA EDITION",
+  "description": "WhatsGAIA",
   "main": "./WhatsGAIA/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
@@ -14,16 +14,16 @@
     "whatsapp",
     "bot",
     "ai",
-    "GAIA",
+    "gaia",
     "WhatsGAIA"
   ],
-  "author": "GAIADev / BAT",
-  "developer": "GAIADev / @Mockir",
+  "author": "AsenaDev / BAT",
+  "developer": "AsenaDev / @valco72",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://discord.gg/gaia"
   },
-  "homepage": "https://discord.gg/gaia",
+  "homepage": "https://github.com/valco72/WhatsGAIA",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.0",
     "@lh2020/speedtest-net": "^2.1.1",
