@@ -1,4 +1,4 @@
-const GAIA = require('../events');
+const Asena = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const memeMaker = require('meme-maker')
 const fs = require('fs')
@@ -9,7 +9,7 @@ const Lang = Language.getString('memes');
 
 if (Config.WORKTYPE == 'private') {
 
-    GAIA.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
+    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
@@ -35,19 +35,19 @@ if (Config.WORKTYPE == 'private') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'GAIA-meme.png',
+            outfile: 'gaia-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('GAIA-meme.png'), MessageType.image, {filename: 'GAIA-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('gaia-meme.png'), MessageType.image, {filename: 'gaia-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
             await info.delete();    
         });
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    GAIA.addCommand({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
@@ -73,16 +73,16 @@ else if (Config.WORKTYPE == 'public') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'GAIA-meme.png',
+            outfile: 'gaia-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('GAIA-meme.png'), MessageType.image, {filename: 'GAIA-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('gaia-meme.png'), MessageType.image, {filename: 'gaia-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
             await info.delete();    
         });
     }));
-    GAIA.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, dontAddCommandList: true}, (async (message, match) => {   
+    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, dontAddCommandList: true}, (async (message, match) => {   
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
@@ -108,12 +108,12 @@ else if (Config.WORKTYPE == 'public') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'GAIA-meme.png',
+            outfile: 'gaia-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('GAIA-meme.png'), MessageType.image, {filename: 'GAIA-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('gaia-meme.png'), MessageType.image, {filename: 'gaia-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
             await info.delete();    
         });
     }));

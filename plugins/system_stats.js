@@ -1,4 +1,4 @@
-const GAIA = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
@@ -11,10 +11,10 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    GAIA.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid, '```GAIA Botunuz Aktif! ₲ Yardıma ihtiyacınız olursa, discord sunucumuzdan bulabilirsiniz.!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH +'```\n*Discord Server:* https://discord.gg/gaia\n*GAIA ₲ WHATSAPP BOTU*', MessageType.text);
+            await message.client.sendMessage(message.jid, '```WhatsGAIA ₲ GAIA halkinin hizmetinde!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH + '```\n*Discord Server:* https://discord.gg/gaia\n*₲ WhatsGAIA ₲*', MessageType.text);
         }
         else {
             const pow = '*Powered by WhatsGAIA*'
@@ -32,7 +32,7 @@ if (Config.WORKTYPE == 'private') {
         }
     }));
 
-    GAIA.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
@@ -42,10 +42,10 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    GAIA.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid, '```GAIA Botunuz Aktif! ₲ Yardıma ihtiyacınız olursa, discord sunucumuzdan bulabilirsiniz.!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH + '```\n*Discord Server:* https://discord.gg/gaia\n*GAIA ₲ WHATSAPP BOTU*', MessageType.text);
+            await message.client.sendMessage(message.jid, '```WhatsGAIA ₲ GAIA halkinin hizmetinde!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH + '```\n*Discord Server:* https://discord.gg/gaia\n*₲ WhatsGAIA ₲*', MessageType.text);
         }
         else {
             const pow = '*Powered by WhatsGAIA*'
@@ -63,7 +63,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     }));
 
-    GAIA.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
@@ -71,10 +71,10 @@ else if (Config.WORKTYPE == 'public') {
         );
     }));
 
-    GAIA.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid, '```GAIA Botunuz Aktif! ₲ Yardıma ihtiyacınız olursa, discord sunucumuzdan bulabilirsiniz.!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH + '```\n*Discord Server:* https://discord.gg/gaia\n*GAIA ₲ WHATSAPP BOTU*', MessageType.text);
+            await message.client.sendMessage(message.jid, '```WhatsGAIA ₲ GAIA halkinin hizmetinde!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH +'```\n*Discord Server:* https://discord.gg/gaia\n*₲ WhatsGAIA ₲*' , MessageType.text);
         }
         else {
             const pow = '*Powered by WhatsGAIA*'
@@ -92,7 +92,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     }));
 
-    GAIA.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
